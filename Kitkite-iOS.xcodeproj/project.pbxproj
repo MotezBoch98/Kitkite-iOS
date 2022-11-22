@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31CF088A6A3202AD31575338 /* Pods_Kitkite_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2302E58CAC0267A7B0B495 /* Pods_Kitkite_iOS.framework */; };
+		EC1689EB292C5C2E00F41EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1689EA292C5C2E00F41EAF /* AppDelegate.swift */; };
+		EC1689F5292C5C2E00F41EAF /* Kitkite_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC1689F3292C5C2E00F41EAF /* Kitkite_iOS.xcdatamodeld */; };
+		EC1689F7292C5C2F00F41EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1689F6292C5C2F00F41EAF /* Assets.xcassets */; };
+		EC1689FA292C5C2F00F41EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1689F8292C5C2F00F41EAF /* LaunchScreen.storyboard */; };
+		EC168A0A292C5FC900F41EAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A09292C5FC900F41EAF /* SceneDelegate.swift */; };
+		EC168A0D292C626700F41EAF /* TabBar in Frameworks */ = {isa = PBXBuildFile; productRef = EC168A0C292C626700F41EAF /* TabBar */; };
+		EC168A11292C65C100F41EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC168A10292C65C100F41EAF /* Main.storyboard */; };
+		EC168A19292C6CD500F41EAF /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A18292C6CD500F41EAF /* UserViewModel.swift */; };
+		EC168A1B292C6D5200F41EAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A1A292C6D5200F41EAF /* Constants.swift */; };
+		EC168A1D292C6DAB00F41EAF /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A1C292C6DAB00F41EAF /* DateUtils.swift */; };
+		EC168A1F292C6E2000F41EAF /* FirstScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A1E292C6E2000F41EAF /* FirstScreenView.swift */; };
+		EC168A21292C6E4800F41EAF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A20292C6E4800F41EAF /* LoginView.swift */; };
+		EC168A23292C6E9300F41EAF /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A22292C6E9300F41EAF /* SignupView.swift */; };
+		EC168A25292C6EC000F41EAF /* Homeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A24292C6EC000F41EAF /* Homeview.swift */; };
+		EC168A27292C6F1800F41EAF /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A26292C6F1800F41EAF /* ProfileHeader.swift */; };
+		EC168A29292C6F3300F41EAF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A28292C6F3300F41EAF /* ProfileView.swift */; };
+		EC168A2B292C6FA400F41EAF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A2A292C6FA400F41EAF /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02FC96CFC220964DF0F5ED2B /* Pods-Kitkite-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitkite-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Kitkite-iOS/Pods-Kitkite-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BF2302E58CAC0267A7B0B495 /* Pods_Kitkite_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitkite_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC1689E7292C5C2E00F41EAF /* Kitkite-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kitkite-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC1689EA292C5C2E00F41EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC1689F4292C5C2E00F41EAF /* Kitkite_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kitkite_iOS.xcdatamodel; sourceTree = "<group>"; };
+		EC1689F6292C5C2F00F41EAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC1689F9292C5C2F00F41EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC1689FB292C5C2F00F41EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC168A09292C5FC900F41EAF /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = SOURCE_ROOT; };
+		EC168A10292C65C100F41EAF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EC168A18292C6CD500F41EAF /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		EC168A1A292C6D5200F41EAF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EC168A1C292C6DAB00F41EAF /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		EC168A1E292C6E2000F41EAF /* FirstScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenView.swift; sourceTree = "<group>"; };
+		EC168A20292C6E4800F41EAF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EC168A22292C6E9300F41EAF /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		EC168A24292C6EC000F41EAF /* Homeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeview.swift; sourceTree = "<group>"; };
+		EC168A26292C6F1800F41EAF /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		EC168A28292C6F3300F41EAF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		EC168A2A292C6FA400F41EAF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F755B99C7ECD33E1A740258B /* Pods-Kitkite-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitkite-iOS.release.xcconfig"; path = "Target Support Files/Pods-Kitkite-iOS/Pods-Kitkite-iOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC1689E4292C5C2E00F41EAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC168A0D292C626700F41EAF /* TabBar in Frameworks */,
+				31CF088A6A3202AD31575338 /* Pods_Kitkite_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B1BE14650130D999B5AB5D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02FC96CFC220964DF0F5ED2B /* Pods-Kitkite-iOS.debug.xcconfig */,
+				F755B99C7ECD33E1A740258B /* Pods-Kitkite-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5775244629870BB6DF5DF8F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF2302E58CAC0267A7B0B495 /* Pods_Kitkite_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC1689DE292C5C2E00F41EAF = {
+			isa = PBXGroup;
+			children = (
+				EC1689E9292C5C2E00F41EAF /* Kitkite-iOS */,
+				EC1689E8292C5C2E00F41EAF /* Products */,
+				0B1BE14650130D999B5AB5D3 /* Pods */,
+				5775244629870BB6DF5DF8F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC1689E8292C5C2E00F41EAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC1689E7292C5C2E00F41EAF /* Kitkite-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC1689E9292C5C2E00F41EAF /* Kitkite-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC168A17292C6BCE00F41EAF /* ViewModel */,
+				EC168A16292C6B7E00F41EAF /* View */,
+				EC168A15292C6B6800F41EAF /* Models */,
+				EC168A14292C6B5A00F41EAF /* Utilities */,
+				EC1689EA292C5C2E00F41EAF /* AppDelegate.swift */,
+				EC168A09292C5FC900F41EAF /* SceneDelegate.swift */,
+				EC168A10292C65C100F41EAF /* Main.storyboard */,
+				EC1689F8292C5C2F00F41EAF /* LaunchScreen.storyboard */,
+				EC1689F6292C5C2F00F41EAF /* Assets.xcassets */,
+				EC1689FB292C5C2F00F41EAF /* Info.plist */,
+				EC1689F3292C5C2E00F41EAF /* Kitkite_iOS.xcdatamodeld */,
+			);
+			path = "Kitkite-iOS";
+			sourceTree = "<group>";
+		};
+		EC168A14292C6B5A00F41EAF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EC168A1A292C6D5200F41EAF /* Constants.swift */,
+				EC168A1C292C6DAB00F41EAF /* DateUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EC168A15292C6B6800F41EAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC168A2A292C6FA400F41EAF /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC168A16292C6B7E00F41EAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC168A1E292C6E2000F41EAF /* FirstScreenView.swift */,
+				EC168A20292C6E4800F41EAF /* LoginView.swift */,
+				EC168A22292C6E9300F41EAF /* SignupView.swift */,
+				EC168A24292C6EC000F41EAF /* Homeview.swift */,
+				EC168A26292C6F1800F41EAF /* ProfileHeader.swift */,
+				EC168A28292C6F3300F41EAF /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC168A17292C6BCE00F41EAF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC168A18292C6CD500F41EAF /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC1689E6292C5C2E00F41EAF /* Kitkite-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC1689FE292C5C2F00F41EAF /* Build configuration list for PBXNativeTarget "Kitkite-iOS" */;
+			buildPhases = (
+				81D12A19222A22B705A9CE1C /* [CP] Check Pods Manifest.lock */,
+				EC1689E3292C5C2E00F41EAF /* Sources */,
+				EC1689E4292C5C2E00F41EAF /* Frameworks */,
+				EC1689E5292C5C2E00F41EAF /* Resources */,
+				92CB5C0B1907531D5A0BCB84 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kitkite-iOS";
+			packageProductDependencies = (
+				EC168A0C292C626700F41EAF /* TabBar */,
+			);
+			productName = "Kitkite-iOS";
+			productReference = EC1689E7292C5C2E00F41EAF /* Kitkite-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC1689DF292C5C2E00F41EAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					EC1689E6292C5C2E00F41EAF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = EC1689E2292C5C2E00F41EAF /* Build configuration list for PBXProject "Kitkite-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC1689DE292C5C2E00F41EAF;
+			packageReferences = (
+				EC168A0B292C626700F41EAF /* XCRemoteSwiftPackageReference "TabBar" */,
+			);
+			productRefGroup = EC1689E8292C5C2E00F41EAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC1689E6292C5C2E00F41EAF /* Kitkite-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC1689E5292C5C2E00F41EAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC1689FA292C5C2F00F41EAF /* LaunchScreen.storyboard in Resources */,
+				EC1689F7292C5C2F00F41EAF /* Assets.xcassets in Resources */,
+				EC168A11292C65C100F41EAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81D12A19222A22B705A9CE1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kitkite-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92CB5C0B1907531D5A0BCB84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kitkite-iOS/Pods-Kitkite-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kitkite-iOS/Pods-Kitkite-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kitkite-iOS/Pods-Kitkite-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC1689E3292C5C2E00F41EAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC168A2B292C6FA400F41EAF /* User.swift in Sources */,
+				EC168A23292C6E9300F41EAF /* SignupView.swift in Sources */,
+				EC168A25292C6EC000F41EAF /* Homeview.swift in Sources */,
+				EC168A1F292C6E2000F41EAF /* FirstScreenView.swift in Sources */,
+				EC168A1B292C6D5200F41EAF /* Constants.swift in Sources */,
+				EC168A29292C6F3300F41EAF /* ProfileView.swift in Sources */,
+				EC168A1D292C6DAB00F41EAF /* DateUtils.swift in Sources */,
+				EC1689EB292C5C2E00F41EAF /* AppDelegate.swift in Sources */,
+				EC168A19292C6CD500F41EAF /* UserViewModel.swift in Sources */,
+				EC1689F5292C5C2E00F41EAF /* Kitkite_iOS.xcdatamodeld in Sources */,
+				EC168A21292C6E4800F41EAF /* LoginView.swift in Sources */,
+				EC168A0A292C5FC900F41EAF /* SceneDelegate.swift in Sources */,
+				EC168A27292C6F1800F41EAF /* ProfileHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC1689F8292C5C2F00F41EAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC1689F9292C5C2F00F41EAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC1689FC292C5C2F00F41EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC1689FD292C5C2F00F41EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC1689FF292C5C2F00F41EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02FC96CFC220964DF0F5ED2B /* Pods-Kitkite-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kitkite-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Aziz.Kitkite-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC168A00292C5C2F00F41EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F755B99C7ECD33E1A740258B /* Pods-Kitkite-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kitkite-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Aziz.Kitkite-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC1689E2292C5C2E00F41EAF /* Build configuration list for PBXProject "Kitkite-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC1689FC292C5C2F00F41EAF /* Debug */,
+				EC1689FD292C5C2F00F41EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC1689FE292C5C2F00F41EAF /* Build configuration list for PBXNativeTarget "Kitkite-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC1689FF292C5C2F00F41EAF /* Debug */,
+				EC168A00292C5C2F00F41EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC168A0B292C626700F41EAF /* XCRemoteSwiftPackageReference "TabBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onl1ner/TabBar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC168A0C292C626700F41EAF /* TabBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC168A0B292C626700F41EAF /* XCRemoteSwiftPackageReference "TabBar" */;
+			productName = TabBar;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		EC1689F3292C5C2E00F41EAF /* Kitkite_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC1689F4292C5C2E00F41EAF /* Kitkite_iOS.xcdatamodel */,
+			);
+			currentVersion = EC1689F4292C5C2E00F41EAF /* Kitkite_iOS.xcdatamodel */;
+			path = Kitkite_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EC1689DF292C5C2E00F41EAF /* Project object */;
+}
