@@ -16,6 +16,7 @@ struct HomeView: View {
         case messages
         case profile
         case events
+        case notifications
         
         var icon: String {
             switch self {
@@ -24,6 +25,7 @@ struct HomeView: View {
                 case .messages: return "ellipsis.message"
                 case .events: return "party.popper"
                 case .profile: return "figure.surfing"
+                case . notifications: return "globe.europe.africa"
                 
 
             }
@@ -36,6 +38,7 @@ struct HomeView: View {
                 case .messages: return "Messages"
                 case .events: return "Events"
                 case .profile: return "Profile"
+                case .notifications: return "Notifications"
             }
         }
     }
@@ -63,8 +66,19 @@ struct HomeView: View {
             Text("Events")
                 .tabItem(for: Item.events)
             
-            Text("Profile")
-                .tabItem(for: Item.profile)
+            NavigationLink(destination: LoginView().navigationBarBackButtonHidden(true)){
+                Button{
+                    
+                } label: {
+                    Text("Get profile")
+                }
+            } .tabItem(for: Item.profile)
+               
+            
+                
+            
+            Text("Notifications")
+                .tabItem(for: Item.notifications)
                         
         }
         .tabBar(style: CustomTabBarStyle())

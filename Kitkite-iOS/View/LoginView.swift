@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var username = ""
-    @State private var password = ""
+    @State  var email: String = ""
+    @State  var password: String = ""
     @State private var wrongUsername: Float = 0
     @State private var wrongPassword: Float  = 0
-    
-    
+    @ObservedObject var viewModel = UserViewModel()
+    var currentUser: User?
     var body: some View {
         NavigationView {
             ZStack {
@@ -39,28 +39,40 @@ struct LoginView: View {
                     SocalLoginButton(image: Image(uiImage: #imageLiteral(resourceName: "google")), text: Text("Sign in with Google").foregroundColor(Color("PrimaryColor")))
                         .padding(.vertical)
                     
-                    TextField("Username", text: $username)
+                    TextField("Email", text: $viewModel.email)
                         .padding()
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                         .border(.red, width: CGFloat())
-                    
-                    
-                    SecureField("Password", text: $password)
-                        .padding()
-                        .frame(width: 300, height: 50)
-                        .background(Color.black.opacity(0.05))
-                        .cornerRadius(10)
-                        .border(.red, width: CGFloat())
-                    
-                    Button("Login") {
                         
+                    
+                    
+                    SecureField("Password", text: $viewModel.password)
+                        .padding()
+                        .frame(width: 300, height: 50)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
+                        .border(.red, width: CGFloat())
+                    
+                    NavigationLink(destination: HomeView().navigationBarBackButtonHidden(true)){
+                        Button("Login",action: {
+                            viewModel.login(email: viewModel.email, password: viewModel.password,completed: {(user)in
+                                if let _ = user {
+                                    print("logged in")
+                                }else {
+                                    print("not logged in")
+                                }
+                            })
+                            
+                        })
+                            
+                        
+                        .foregroundColor(.white)
+                        .frame(width: 300, height: 50)
+                        .background(Color("PrimaryColor"))
+                        .cornerRadius(10)
                     }
-                    .foregroundColor(.white)
-                    .frame(width: 300, height: 50)
-                    .background(Color("PrimaryColor"))
-                    .cornerRadius(10)
                                      
                 }
             }.navigationBarHidden(true)

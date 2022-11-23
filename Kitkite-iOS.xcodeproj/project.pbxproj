@@ -22,8 +22,8 @@
 		EC168A21292C6E4800F41EAF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A20292C6E4800F41EAF /* LoginView.swift */; };
 		EC168A23292C6E9300F41EAF /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A22292C6E9300F41EAF /* SignupView.swift */; };
 		EC168A25292C6EC000F41EAF /* Homeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A24292C6EC000F41EAF /* Homeview.swift */; };
-		EC168A27292C6F1800F41EAF /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A26292C6F1800F41EAF /* ProfileHeader.swift */; };
-		EC168A29292C6F3300F41EAF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A28292C6F3300F41EAF /* ProfileView.swift */; };
+		EC168A27292C6F1800F41EAF /* UpdateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A26292C6F1800F41EAF /* UpdateProfileView.swift */; };
+		EC168A29292C6F3300F41EAF /* PlainProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A28292C6F3300F41EAF /* PlainProfileView.swift */; };
 		EC168A2B292C6FA400F41EAF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC168A2A292C6FA400F41EAF /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +45,8 @@
 		EC168A20292C6E4800F41EAF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EC168A22292C6E9300F41EAF /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		EC168A24292C6EC000F41EAF /* Homeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeview.swift; sourceTree = "<group>"; };
-		EC168A26292C6F1800F41EAF /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
-		EC168A28292C6F3300F41EAF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		EC168A26292C6F1800F41EAF /* UpdateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileView.swift; sourceTree = "<group>"; };
+		EC168A28292C6F3300F41EAF /* PlainProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainProfileView.swift; sourceTree = "<group>"; };
 		EC168A2A292C6FA400F41EAF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F755B99C7ECD33E1A740258B /* Pods-Kitkite-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitkite-iOS.release.xcconfig"; path = "Target Support Files/Pods-Kitkite-iOS/Pods-Kitkite-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,8 +141,8 @@
 				EC168A20292C6E4800F41EAF /* LoginView.swift */,
 				EC168A22292C6E9300F41EAF /* SignupView.swift */,
 				EC168A24292C6EC000F41EAF /* Homeview.swift */,
-				EC168A26292C6F1800F41EAF /* ProfileHeader.swift */,
-				EC168A28292C6F3300F41EAF /* ProfileView.swift */,
+				EC168A26292C6F1800F41EAF /* UpdateProfileView.swift */,
+				EC168A28292C6F3300F41EAF /* PlainProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,14 +281,14 @@
 				EC168A25292C6EC000F41EAF /* Homeview.swift in Sources */,
 				EC168A1F292C6E2000F41EAF /* FirstScreenView.swift in Sources */,
 				EC168A1B292C6D5200F41EAF /* Constants.swift in Sources */,
-				EC168A29292C6F3300F41EAF /* ProfileView.swift in Sources */,
+				EC168A29292C6F3300F41EAF /* PlainProfileView.swift in Sources */,
 				EC168A1D292C6DAB00F41EAF /* DateUtils.swift in Sources */,
 				EC1689EB292C5C2E00F41EAF /* AppDelegate.swift in Sources */,
 				EC168A19292C6CD500F41EAF /* UserViewModel.swift in Sources */,
 				EC1689F5292C5C2E00F41EAF /* Kitkite_iOS.xcdatamodeld in Sources */,
 				EC168A21292C6E4800F41EAF /* LoginView.swift in Sources */,
 				EC168A0A292C5FC900F41EAF /* SceneDelegate.swift in Sources */,
-				EC168A27292C6F1800F41EAF /* ProfileHeader.swift in Sources */,
+				EC168A27292C6F1800F41EAF /* UpdateProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

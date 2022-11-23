@@ -18,7 +18,7 @@ public class UserViewModel: ObservableObject{
       var password: String = ""
 //      var gender: String = ""
       var birthdate = Date()
-    
+    static var currentUser :User?
     static let sharedInstance = UserViewModel()
     
     func getAllUsers( completed: @escaping (Bool, [User]?) -> Void ) {
@@ -66,28 +66,43 @@ public class UserViewModel: ObservableObject{
             }
     }
 
-    func login(email: String, password: String, completed: @escaping (Bool, Any?) -> Void) {
+    func login(email: String, password: String, completed: @escaping(User?)-> Void ) {
         AF.request(HOST_IP_URL + "user/login",
-                   method: .post,
-                   parameters: ["email": email, "password": password])
-            .validate(statusCode: 200..<300)
+                   method: .post, parameters: ["email": email,"password": password] ,encoding: JSONEncoding.default)
+            .validate(statusCode: 200..<500)
             .validate(contentType: ["application/json"])
-            .responseData { response in
-                switch response.result {
-                case .success:
-                    let jsonData = JSON(response.data!)
-                    let user = self.makeItem(jsonItem: jsonData["user"])
-                    UserDefaults.standard.setValue(jsonData["token"].stringValue, forKey: "tokenConnexion")
-                    UserDefaults.standard.setValue(user._id, forKey: "UserId")
-                    print(user)
-
-                    completed(true, user)
-                case let .failure(error):
-                    debugPrint(error)
-                    completed(false, nil)
+                        .responseJSON {
+                            (response) in
+                            switch response.result {
+                                
+                            case .success(let JSON):
+                                let response = JSON as! NSDictionary
+                                let userResponse = response.object(forKey: "user") as! NSDictionary
+                                let email = userResponse.object(forKey: "email") as? String ?? ""
+                                let lastName = userResponse.object(forKey: "lastname") as? String ?? ""
+                                let password = userResponse.object(forKey: "password") as? String ?? ""
+                                let firstName = userResponse.object(forKey: "firstname") as? String ?? ""
+                                let image = userResponse.object(forKey: "imageFilename") as? String ?? ""
+                               
+                                print("success  \(email )")
+                                print("success  \(lastName )")
+                                print("success  \(password )")
+                                var currentUser = User(email: email, password: password, firstname: firstName, lastname: lastName)
+                                
+                                currentUser.imageFilename = image
+                                Self.currentUser = currentUser
+                              
+                                print("success \(JSON )")
+                               
+                                completed(currentUser)
+                            case .failure(let error):
+                                print("request failed \(error)")
+                                completed(nil)
+                            }
+                        }
+              
                 }
-            }
-    }
+
 
     func loginWithSocialApp(email: String, firstname: String, lastname: String, completed: @escaping (Bool, User?) -> Void ) {
         AF.request(HOST_IP_URL + "user/socialLogin",

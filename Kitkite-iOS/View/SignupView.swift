@@ -14,7 +14,6 @@ struct SignupView: View {
     @State  var lastname: String = ""
     @State  var email: String = ""
     @State  var password: String = ""
-//    @State  var gender: String = ""
     @State  var birthdate = Date()
     @State private var redirectLogin = false
     @ObservedObject var viewModel = UserViewModel()
@@ -99,7 +98,7 @@ struct SignupView: View {
                         .frame(width: 300, height: 50)
                         .background(Color.gray.opacity(0.2))
                         .cornerRadius(10)
-                        .disableAutocorrection(true)
+                        
 
                     //                        .datePickerStyle(WheelPickerStyle())
                     
@@ -112,13 +111,16 @@ struct SignupView: View {
 //                    .background(Color.gray.opacity(0.2))
 //                    .cornerRadius(10)
                     
-                    Button("Register", action: {
-                        viewModel.signup(user: User(username: viewModel.username,email: viewModel.email, password: viewModel.password, firstname: viewModel.firstname, lastname: viewModel.lastname, birthdate: viewModel.birthdate))
-                    })
-                    .foregroundColor(.white)
-                    .frame(width: 300, height: 50)
-                    .background(Color("PrimaryColor"))
-                    .cornerRadius(10)
+                    NavigationLink(destination: LoginView().navigationBarBackButtonHidden(true), isActive: $redirectLogin ){
+                        Button("Register", action: {
+                            viewModel.signup(user: User(username: viewModel.username,email: viewModel.email, password: viewModel.password, firstname: viewModel.firstname, lastname: viewModel.lastname, birthdate: viewModel.birthdate))
+                            redirectLogin=true
+                        })
+                        .foregroundColor(.white)
+                        .frame(width: 300, height: 50)
+                        .background(Color("PrimaryColor"))
+                        .cornerRadius(10)
+                    }
                 }//VStack
                 
                 
